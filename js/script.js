@@ -15,20 +15,20 @@ const searchBook = () => {
             //clear search result
             searchResult.textContent = '';
 
-            const searchResultResult = document.createElement('div');
-            searchResultResult.classList.add('text-center');
-            
+            const searchDetailResult = document.createElement('div');
+            searchDetailResult.classList.add('text-center');
+
             if (data.numFound === 0) {
-                searchResultResult.innerHTML = `
+                searchDetailResult.innerHTML = `
                     <h2 class="text-danger">Sorry! Please search with a proper book name</h2>
                 `;
             }
             else {
-                searchResultResult.innerHTML = `
+                searchDetailResult.innerHTML = `
                             <h2> Result-Found : <span style="color: rgba(22, 9, 160, 0.623)">${data.numFound}</span></h2>
                 `;
             }
-            searchResult.appendChild(searchResultResult);
+            searchResult.appendChild(searchDetailResult);
 
             //clear book details
             searchResult.textContent = '';

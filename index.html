@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library</title>
+    <title>Book Archive</title>
 
     <!-- bootstrap stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
- <body style="background-color: rgb(236, 238, 240);">
+
+<body style="background-color: rgb(236, 238, 240);">
     <main class="container">
         <h2 class="text-center mt-5 fw-bold">Welcome to <span class="fs-2 heading">The Book Archive</span></h2>
         <!-- book search area -->
         <section>
             <div class="input-group mb-3 mt-4 w-50 mx-auto rounded-3">
                 <input id="search-field" type="text" class="form-control" placeholder="Search the book you want "
-            aria-label="search" aria-describedby="button-addon2">
-        <button onclick= "searchBook()" class="btn button rounded-3 ms-1" type="button">search</button>
+                    aria-label="search" aria-describedby="button-addon2">
+                <button onclick="searchBook()" class="btn button rounded-3 ms-1" type="button">search</button>
             </div>
-              
-        <!-- spinner -->
-        <div id='spinner' class="text-center">
-            <div class="spinner-border text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <p>Please Wait....</p>
-        </div>
 
-         <!-- search result -->
-        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-5 text-center"> </div>
+            <!-- spinner -->
+            <div id='spinner' class="text-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Please Wait....</p>
+            </div>
+
+            <!-- search result -->
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-5 text-center"> </div>
         </section>
     </main>
 
@@ -44,4 +47,5 @@
     <!-- JavaScript Link -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
