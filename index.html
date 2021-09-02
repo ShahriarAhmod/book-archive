@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <p>hi man</p>
 
-  <!-- js file link -->
-  <script src="js/script.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book Details</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <style>
+        /* Fonts */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* * {
+            background-image: url("images/background.png");
+            background-repeat: no-repeat;
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class=" container text-center py-4">
+        <h1>Search From Book Archive</h1>
+    </div>
+    <section class="container my-2 ">
+        <!-- Input Box -->
+        <div class="d-flex  w-50 mx-auto">
+            <input id="search-field" type="text" class="form-control me-2" placeholder="Type the Book's Name" id="searchInput"  aria-label="search" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-primary " >Search</button>
+        </div>
+        <div>
+            <h4 class="text-center">Result Found : <span id="total-search-result">0</span> </h4>
+        </div>
+    </section>
+    <section class="container">
+        <!-- book Details -->
+        <div class="row row-cols-1 row-cols-md-3 g-5 text-center" id="book-details"></div>
+        
+    </section>
+    <section class="container mt-2">
+        
+    </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
